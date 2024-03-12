@@ -1,0 +1,100 @@
+body {
+    background-image: url(lite.jpg);
+    /* Add the URL of your second background image */
+    background-repeat: repeat;
+    /* Prevent the background image from repeating */
+    background-size: cover;
+    /* Ensure the background image covers the entire body */
+    background-position: center;
+    /* Center the background image */
+    height: 900px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.footer {
+    text-align: center;
+    margin: 70px;
+    padding-left: 80px;
+    display: flex;
+}
+
+.box {
+    position: relative;
+    background-image: url('5.jpg');
+    /* Set background image */
+    background-size: cover;
+    /* Ensure the background image covers the entire box */
+    background-position: center;
+    /* Center the background image */
+    width: 400px;
+    /* Set the width of each box */
+    height: 400px;
+    /* Set the height of each box */
+    margin-bottom: 20px;
+    /* Add margin between each box */
+    cursor: pointer;
+}
+
+.box img {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    /* Adjust the width of the image as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.box h1 {
+    position: absolute;
+    bottom: 250px;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    /* Set text color */
+    font-size: 18px;
+    /* Set font size */
+    font-weight: bold;
+    /* Set font weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Add text shadow */
+}
+
+.box img {
+    position: absolute;
+    top: 20px;
+    /* Adjust the top position if needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    /* Adjust the width of the image as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.box p {
+    position: absolute;
+    top: 140px;
+    /* Adjust the top position to create space below the h1 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    /* Set text color */
+    font-size: 14px;
+    /* Set font size */
+    text-align: center;
+    /* Center-align the text */
+    padding-top: 30px;
+}
+
+.box .air {
+    width: 150px;
+    /* Adjust the width of the image as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}

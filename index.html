@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadoo</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(6, 41, 239);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: rgb(188, 200, 235);
+            box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            color: black;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        nav ul li a:hover {
+            color: rgb(227, 8, 243);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 3rem;
+            color: rgba(10, 92, 244, 0.995);
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: left;
+            margin: 40px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            color: rgba(255, 124, 1, 0.991);
+            font-size: 1.8rem;
+
+        }
+
+        .leftSection .buttons {
+            padding: 50px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: aqua;
+            color: rgb(0, 0, 0);
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftSection .btn1 {
+            padding: 12px;
+            background: rgb(139, 247, 7);
+            color: rgb(0, 0, 0);
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        .rightSection img {
+            width: 100%
+        }
+
+        .purple {
+            color: rgba(236, 19, 240, 0.977);
+            text-shadow: 1px 1px 2px rgb(8, 159, 234), 0 0 25px rgb(0, 247, 255), 0 0 5px rgb(175, 235, 23);
+        }
+
+        .secondSection {
+            align-content: flex-end;
+            color: rgb(6, 6, 6);
+            align-items: top center;
+
+        }
+
+        .text {
+            font-size: 15px;
+            padding-top: 30px;
+        }
+
+        .gold {
+            color: rgb(240, 175, 9);
+        }
+
+        .travel {
+            padding-top: 50px;
+        }
+
+        .mx {
+            width: 20px;
+            background-color: rgb(139, 247, 7);
+        }
+
+        .cat>h3 {
+            text-align: center;
+            margin: 80px;
+            border-bottom: 3px dashed blue;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .cat>h1 {
+            text-align: center;
+            color: purple;
+            margin-top: 10px;
+            margin: 0;
+        }
+
+        /* Default styles */
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: cover;
+        height: auto; /* Reset height for mobile devices */
+    }
+
+    nav {
+        height: auto; /* Adjust height for smaller screens */
+        flex-direction: column; /* Stack nav items vertically */
+        text-align: center; /* Center-align nav items */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        margin-top: 20px; /* Add space between nav items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    .leftSection, .rightSection {
+        width: 100%; /* Make sections full width on smaller screens */
+        text-align: center; /* Center-align content */
+    }
+
+    .firstSection {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center; /* Center-align sections */
+    }
+
+    .footer {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center-align boxes */
+    }
+
+    .box {
+        width: 80%; /* Adjust box width for smaller screens */
+        height: auto; /* Allow boxes to expand based on content */
+    }
+
+    .box h1, .box p {
+        width: 100%; /* Make text full width */
+        text-align: center; /* Center-align text */
+    }
+
+    .box img {
+        width: 60%; /* Adjust image width for smaller screens */
+    }
+}
+
+
+
+      
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left"><strong>Jad<span class="gold">oo</span></strong></div>
+            <div class="right">
+                <ul>
+                    <li><a href="'/">Home</a></li>
+                    <li><a href="'/">Destination</a></li>
+                    <li><a href="'/">Hotels</a></li></a>
+                    <li><a href="'/">Flights</a></li>
+                    <li><a href="'/">Booking</a></li>
+                    <li><a href="'/">Login</a></li>
+                    <li><a href="'/">Sign Up</a></li>
+                    <li><a href="'/">EN V</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+    <section class="firstSection">
+        <div class="leftSection">
+            <img src="4.png" alt="" , height="100px">
+            <p><b><span class="purple">BEST DESTINATIONS AROUND THE WORLD</span></b></p>
+            <div class="travel">Travel, enjoy</div>
+            <span id="element"></span>
+            <section class="secondSection">
+                <div>
+                    <p class="text">Built Wicket longer admire do barton vanity itself do in it.
+                        Preferred to sportsmen it engrossed listening.
+                        Park gate sell they west hard for the.</p>
+                </div>
+            </section>
+            <div class="buttons">
+                <button class="btn">Find Out More</button>
+                <button class="btn1"><img class="mx" src="download.png" alt="">Play Demo</button>
+            </div>
+            <img src="left.jpg" alt="", height="500px">
+
+
+
+        </div>
+
+        <div class="rightSection">
+            <img src="7.png" alt="" , height="1000px">
+
+        </div>
+    </section>
+    <div class="cat">
+        <h3><b>CATEGORY</b></h3>
+        <h1>We offer Best Services</h1>
+    </div>
+    <hr>
+    <div class="footer">
+        <div class="box">
+            <img src="3.jpg">
+            <h1>Calculated Weather</h1>
+            <p>Built Wicket longer admire do barton vanity itself do in it</p>
+        </div>
+        <div class="box">
+            <img class="air" src="air.jpg" alt="">
+            <h1>Best Flight</h1>
+            <p>Engrossed listening.Park gate sell they west hard for the.</p>
+        </div>
+        <div class="box">
+            <img src="mi.jpg" alt="">
+            <h1>Local Events</h1>
+            <p>Barton vanity itself do in it.Preferd to men it engrossed listening</p>
+        </div>
+        <div class="box">
+            <img src="2.jpg" alt="">
+            <h1>Customization</h1>
+            <p>We deliver outsourced aviation services for military customers</p>
+        </div>
+    </div>
+    </hr>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Find Yourself', 'and live a new'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 body {
-    background-image: url(lite.jpg);
+    background-image: url(lite.webp);
     /* Add the URL of your second background image */
     background-repeat: repeat;
     /* Prevent the background image from repeating */
@@ -23,7 +23,7 @@ body {
 
 .box {
     position: relative;
-    background-image: url('5.jpg');
+    background-image: url('5.webp');
     /* Set background image */
     background-size: cover;
     /* Ensure the background image covers the entire box */
